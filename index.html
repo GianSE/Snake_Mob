@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu">
+    <h1>Welcome to Snake Game</h1>
+    <button id="startButton">Start Game</button>
+  </div>
+
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+  <div class="directionButtons">
+    <button class="button" id="upButton">Up</button>
+    <div>
+      <button class="button" id="leftButton">Left</button>
+      <button class="button" id="downButton">Down</button>
+      <button class="button" id="rightButton">Right</button>
+    </div>
+  </div>
+
+  <div id="overlay"></div>
+  <div id="message">
+    <h1>QUER NAMORAR COMIGO THALIA?</h1>
+    <button class="button" onclick="celebrate()">Sim</button>
+    <button class="button" onclick="celebrate()">Óbvio, eu já não disse sim várias vezes seu palhaço?</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
